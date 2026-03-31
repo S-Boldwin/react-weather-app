@@ -43,14 +43,14 @@ function App() {
             type="text"
             className="search-input"
             value={city}
-            onChange={(e) => setCity(e.target.value)}   // ✅ fixed
+            onChange={(e) => setCity(e.target.value)}  
             onKeyUp={(e) => e.key === "Enter" && fetchWeather()}
             placeholder="Enter a city name..."
           />
           <button
             className="search-button"
             onClick={fetchWeather}
-            disabled={!city.trim() || loading}  // ✅ fixed
+            disabled={!city.trim() || loading}  
           >
             {loading ? "Searching..." : "Search"}
           </button>
@@ -75,7 +75,7 @@ function App() {
         )}
 
         {/* Weather Display */}
-        {weather && !loading && (   // ✅ fixed condition
+        {weather && !loading && (   
           <div className="weather-card">
             <div className="weather-header">
               <h2 className="city-name">{weather.name},{weather.sys.country}</h2>
@@ -120,7 +120,7 @@ function App() {
         )}
 
         {/* Empty State */}
-        {!loading && !error && !weather && (   // ✅ fixed condition
+        {!loading && !error && !weather && (  
           <div className="empty-state">
             <p className="empty-icon">🌍</p>
             <p className="empty-text">Search for a city to see weather information</p>
