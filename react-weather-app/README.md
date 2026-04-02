@@ -4,9 +4,10 @@ A weather app that taught me how React actually talks to the real world.
 
 I built this on Day 22 of learning React - the day APIs finally made sense. Before this, all my data lived in useState. Now I know how to grab it from anywhere.
 
-![Glassmorphism design](screenshot.png)
-
 ## [→ Try it](https://s-boldwin.github.io/react-weather-app/)
+
+## 📸 Screenshot
+![Weather App Screenshot](./screenshot.png)
 
 ---
 
